@@ -21,9 +21,9 @@ bmp = BMP280(bus_bmp, addr=0x77)
 mqtt_host = "mqtt3.thingspeak.com"
 mqtt_channel_id = "2775818"  # Reemplaza con tu Channel ID
 mqtt_publish_topic = f"channels/{mqtt_channel_id}/publish"
-mqtt_client_id = "DygnBhgCAyAwCQASKBIxFAA"  # Client ID proporcionado
-mqtt_username = "DygnBhgCAyAwCQASKBIxFAA"  # Username proporcionado
-mqtt_password = "HSw1aATnJG2871E+LUn7Um6F"  # Reemplaza con el password completo proporcionado
+mqtt_client_id = "DygnXXXXXXXXXXXX"  # Client ID proporcionado
+mqtt_username = "DygnXXXXXXXXXXXXX"  # Username proporcionado
+mqtt_password = "HSw1XXXXXXXXXXXXX"  # Reemplaza con el password completo proporcionado
 
 # Inicializar el cliente MQTT
 mqtt_client = MQTTClient(
@@ -116,7 +116,7 @@ def publicar_datos(temp, pres):
 
 # Enviar datos a Google Sheets
 def enviar_a_google_sheets(temp, pres):
-    url = "https://script.google.com/macros/s/AKfycbxG0KKPv1IQY95wb1njanhkDhedAxJTvKYKyziCL0yMUTxiMUPPc5DDPrSNmwO6E0zP/exec"
+    url = "https://script.google.com/macros/s/AKfycbXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     headers = {"Content-Type": "application/json"}
     data = {"temperature": temp, "pressure": pres}
     print(f"Enviando datos a Google Sheets: {data}")
